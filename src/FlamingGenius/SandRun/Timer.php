@@ -26,12 +26,11 @@ class Timer extends PluginTask{
   $z = $this->getConfig()->get("z");
   $level = $this->getConfig()->get("level");
 //line 28
+    $seconds--;
+    
   if($seconds == 0){
    $player->teleport(new position($x,$y,$z,$level));
   }
-   else{
-    $seconds--;
-   }
  }
 //line 36
 
